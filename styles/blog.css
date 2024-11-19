@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    line-height: 1.4;
+    color: #3c393d;
+}
+nav{
+	width: 100%;
+	height: 70px;
+	background:white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	
+	top:0px;
+	justify-content: center;
+	align-items: center;
+	animation: transitionIN 2s;
+}
+nav ul{
+	display: flex;
+	margin: 0;
+	
+	float: right;
+}
+
+
+nav ul li{
+	list-style: none;
+	width:25%;
+}
+nav ul li a{
+	 float: left;
+  display: block;
+  color:#4F4444;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+background-color: white;
+	font-family:'Courier New', Courier, monospace;
+	align-items: center;
+	justify-content: center;
+	font-weight:bold;
+	
+	
+	
+	
+}
+
+nav ul li a:hover{
+	-shadow: 0 0 10px rgb(0, 0, 0,0.5);
+	-webkit-transform:scale(1.1) ;
+	transform:scale(1.1) ;
+  height:20px;
+  
+  
+}
+#divn{
+	float: left;
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+background-color:white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 19.2px;
+    
+}
+
+/* header */
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../src/blog/banner-bg.jpg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+}
+
+.banner-title span {
+    font-family: 'Playfair Display', serif;
+    color: #2b2b2b;
+}
+
+.banner p {
+    padding: 16px 0 32px 0;
+    font-size: 19.2px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.banner form {
+    background: #fff;
+    border-radius: 32px;
+    padding: 9.6px 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22.4px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17.6px;
+    width: 100%;
+    outline: 0;
+    padding: 9.6px 0;
+    border: none;
+}
+
+.search-input::placeholder {
+    text-transform: capitalize;
+}
+
+.search-btn {
+    width: 40px;
+    font-size: 17.6px;
+    color: #3c393d;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* design */
+.design {
+    padding: 72px 0;
+}
+
+.title {
+    text-align: center;
+    padding: 16px 0;
+}
+
+.title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38.4px;
+}
+.title p {
+    text-transform: uppercase;
+    padding: 9.6px 0;
+}
+
+.design-content {
+    margin: 32px 0;
+}
+
+.design-item {
+    cursor: pointer;
+    margin: 24px 0;
+}
+
+.design-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.design-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.design-img img {
+    transition:  all 0.5s ease;
+}
+.design-item:hover img {
+    transform: scale(1.2);
+}
+
+.design-img span:first-of-type {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: #2b2b2b;
+    color: #fff;
+    padding: 4px 16px;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17.6px;
+}
+.design-title {
+    padding: 16px;
+    font-size: 19.2px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.design-title a {
+    color: #3c393d;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Playfair Display', serif;
+}
+
+/* blog */
+.blog {
+    background: #f9f9f9;
+    padding: 72px 0;
+}
+
+.blog-content {
+    margin: 32px 0;
+}
+
+.blog-img {
+    position: relative;
+}
+
+.blog-p {
+    width: 300px;
+    height: 450px;
+}
+
+.blog-p:hover {
+    border: 2px solid black;
+    width: 310px;
+    height: 457px;
+}
+
+
+.blog-img span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #2b2b2b;
+    color: #fff;
+    font-size: 22.4px;
+    padding: 4.8px 9.6px;
+}
+
+.blog-text {
+    margin: 35.2px 0;
+    padding: 0 16px;
+}
+
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 8px;
+}
+.blog-text h2 {
+    font-family: 'Playfair Display', serif;
+    padding: 16px 0;
+    font-size: 26.4px;
+    font-weight: 500;
+}
+
+.blog-text p {
+    font-weight: 300;
+    font-size: 17.6px;
+    opacity: 0.9;
+    padding-bottom: 19.2px;
+}
+
+.blog-text a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17.6px;
+    text-decoration: none;
+    color: #3c393d;
+    display: inline-block;
+    background: #3c393d;
+    color: #fff;
+    padding: 8.8px 19.2px;
+    transition: all 0.5s ease;
+}
+
+.blog-text a:hover {
+    background: #2b2b2b;
+}
+
+/* about */
+.about {
+    padding: 72px 0;
+}
+
+.about-text {
+    margin: 32px 0;
+}
+.about-text p{
+    font-size: 17.6px;
+    padding: 9.6px 0;
+    opacity: 0.8;
+}
+
+.about-bg:hover {
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+
+
+    .banner-title {
+        font-size: 80px;
+    }
+
+    .search-input {
+        padding: 12.8px 0;
+    }
+
+    .design-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+    .design-item {
+        margin: 0;
+    }
+
+    .blog-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .blog-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+
+
+    .design-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-main {
+        background-image: url(../src/footer.jpg);
+        font-family: "Poppins", sans-serif;
+      height: 280px;
+        
+      }
+      
+      #footer{
+      
+          width: 100%;
+          height: 280px;
+          font-size: 13px;
+        background-image: url(../src/footer.jpg);
+        display:block;
+          
+          
+          
+          
+      }
+      #footer1{
+        padding-top: 10px;
+          width: 25%;
+          height: 250px;
+          /* background-image: url(footer.jpg); */
+          float: left;
+      
+          
+          
+      }
+      #footer2{
+        padding-top: 10px;
+          width: 25%;
+          height: 250px;
+          /* background-color: #2e2d2d; */
+          float: left;
+       
+          
+          
+      }
+      #footer3{
+        padding-top: 10px;
+          width: 25%;
+          height: 250px;
+          /* background-color: #2e2d2d; */
+          float: left;
+        
+          
+          
+          
+      }
+      #footer4{
+        padding-top: 10px;
+          width: 25%;
+          height: 250px;
+          /* background-color: #2e2d2d; */
+          float: left;
+          align-items: center;
+          text-align: center;
+       
+          
+          
+          
+          
+      }
+      #footer ul li{
+          text-align: center;
+          color: white;
+          
+      }
+      #footer ul li a{
+          color: white;
+      }
+      #footer hr{
+          
+          background-color: whit;
+          
+      }
+      
+      #footer h4{
+          text-align: center;
+          color: white;
+      }
+      
+      #staff{
+    
+        height: 2000px;
+      }
+      
